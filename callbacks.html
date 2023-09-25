@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function orderpizza(pd) 
+        {
+            let flavour = "Margaretta";
+            console.log("pizza delivery"+flavour);
+             pd();
+            // pizzadelivery();//pd - pizza delivery
+        }
+        function pizzadelivery(){
+            let address = "wilson garden";
+            console.log("takes 30 mins to deliver");
+            console.log("delivered at"+address);
+    
+        }
+        function callfriend(){
+            console.log("friend is coming in 30 mins");
+        }
+
+        orderpizza(pizzadelivery);
+        callfriend();
+        // callback - when a function is passed as a parameter to other function
+    </script>
+</body>
+</html>

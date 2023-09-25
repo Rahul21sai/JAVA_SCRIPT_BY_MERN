@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>we are learning javascript</h1>
+
+    <script>
+      //     create output
+      //    document.write("hello world!");
+      //     alert("hello");
+      //    console.log("hello world"); // console - window where you get your data;
+      //   document.write("Rahul"+"<br>");
+      //    document.write(20+"<br>");
+      //    document.write(123456789 +  "<br>");
+      //    document.write(85+ "<br>");
+      //    document.write(157 + "<br>");
+      //    document.erite(false+"<br>");
+      //    instead of repeating every again we use variables to stor e the data
+      //    reusable and perfrom operatioon //
+      //    let var const words used todeclare variables
+
+      // variables ----------------------
+      //   let name ="rahul";
+      //   var age = 20;
+      //   const phone = 1223456789;
+      //   let height = 5.11;
+      //   var weigth = 85;
+      //   let status = false;
+      //   document.write(name + "<br>");
+      //   document.write(age +"<br>");
+      //   document.write(phone+"<br>");
+      //   document.write(height +"<br>");
+      //   document.write(weigth+"<br>");
+      //   document.write(status +"<br>");
+
+      // operators------------------------
+      // unary binary ternary
+      // 1      2      3 operands
+      // increment arthematic  conditionaloperators
+      // post increment pre incre
+      // pre - increase the value by 1 and assign the value access the updated value
+      //   pre incremnet
+      //   let a = 13;
+      //   let b = ++a;
+      //   console.log(a);
+      //   console.log(b);
+
+      //   postthe current value
+      // assign
+      //update by 1
+      // access theupdated
+      //   let a = 13;
+      //   let b = a++;
+      //   console.log(a);
+      //   console.log(b);
+
+      // let a = 13;
+      //   let b = --a;
+      //   console.log(a);
+      //   console.log(b);
+
+      // let a = 13;
+      //   let b = a--;
+      //   console.log(a);
+      //   console.log(b);
+
+      //   let a = 13;
+      //   let b = 15;
+      //   let c = a + b + --a + ++b - a++ + a-- + b++;
+      //   console.log(a);
+      //   console.log(b);
+      //   console.log(c);
+
+      //   ---------Arthimetic operators--------
+      //   let a = 10;
+      //   let b = 5;
+      //   let sum = a + b;
+      //   let dif = a - b;
+      //   let pro = a * b;
+      //   let div = a / b;
+      //   let rem = a % b;
+
+      //   console.log(sum);
+      //   console.log(dif);
+      //   console.log(pro);
+      //   console.log(div);
+      //   console.log(rem);
+
+      // ------- relational operators---
+      // let a = 5;
+      // let b = 6;
+
+      // console.log(a > b);
+      // console.log(a < b);
+      // console.log(a >= b);
+      // console.log(a === b);// will check for datatype and values
+      // console.log(a != b);
+      // console.log(a == b); // will only check for values , will not check for datatype
+      // let a = 5;
+      // let b = "5";
+
+      // console.log(a === b);// will check for datatype and values
+      // console.log(a == b); // will only check for values , will not check for datatype
+
+      //   let a = 5;
+      //   let b = 8;
+      //   console.log(b > a && a > 3 ); // both true only true other wise false
+      //   console.log(b > a || a > 3 ); // if both are flase only false other wise one is true also true
+
+      // ----------------ternary operators-------
+      //ternary 3  operands
+      //    oper 1 ? op 2 : op 3
+      //  cond  1? cond 2 : cond 3
+
+      // let a = 15;
+      // let b = 13;
+      // let result =( (a>b)?"a is greater":"b is greater");
+      // let result =((a>b)?"a is greateer":"b is greater");
+      // console.log(result);
+
+      // find wheather a number is even or not using conditional operator
+
+      //   let num = 4;
+      //   let res = num % 2 === 0 ? "num is even" : "num is odd";
+      //   console.log(res);
+
+      // find the greatest of 3 numbers
+      let a = 13;
+      let b = 15;
+      let c = 10;
+      let result =
+        a > b && a > c
+          ? "a is greater"
+          : b > c
+          ? "b is greater "
+          : "c is greater";
+      document.write(result);
+    </script>
+  </body>
+</html>

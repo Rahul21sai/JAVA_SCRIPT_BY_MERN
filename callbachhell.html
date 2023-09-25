@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function rahul(amith) {
+      //     console.log("hi i am rahul,want to get in ");
+      //     amith(nayana);
+      // }
+      // function Amith(Nayana){
+      //     console.log("hi this is amith");
+      //     Nayana();
+      // }
+      // function nayana(){
+      //     console.log("hi i am nayana");
+
+      // }
+      // rahul(Amith);
+      // call back -callbacks after a call back it leads to a call back hell.
+      // call back ->it gives riise to pyramidcal like structure
+      let richie = (amith) => {
+        console.log("richie getting in touch with ");
+        amith(() => {
+          console.log("hi i am nayana");
+        });
+      };
+      richie(() => {
+        console.log("i am amith,call nayana");
+        nayana();
+      });
+      // call back function
+      // call back hell
+      // asynchronous programming
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getmoney(){
+            return new Promise(function(resolve,reject){
+                setTimeout(() =>{
+                    resolve(100);
+                })   
+            });
+        }
+
+        // function sucess(){
+        //     console.log("i got my money");
+        // }
+        // function failure(){
+        //     console.log("that fellow didnt give");
+        // }
+        let you = getmoney();
+        you.then(()=> {
+            console.log("i got my money");
+        }).catch(()=> {
+            console.log("that fellow didnt give");
+        });
+        // console.log(you);
+    </script>
+</body>
+</html>

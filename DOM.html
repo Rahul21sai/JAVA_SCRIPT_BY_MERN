@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>this is heading</h1>
+    <p id="i1">i can change content</p>
+    <button onclick="change()">click here</button>
+    <script>
+      function change() {
+        document.getElementById("i1").innerHTML = "textchange";
+      }
+      // JSON javascript object notation
+      // text format
+      // used for transporting data
+      // ---------JSON------------
+      //    let data = {
+      //     name: "tendulkar",
+      //     place:"mumbai",
+      //    };
+
+      let data = `{
+    "name": "tendulkar",
+    "place":"mumbai",
+}`;
+      console.log(data);
+      //   object is not b/w server so it is converted into json file the object is converted into json to transport it is not transportable -convert it into a json
+    </script>
+    <!--DOM(documnet object) is a sub set of BOM/window object model (document object screen object navigator object)-->
+  </body>
+</html>

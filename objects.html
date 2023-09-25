@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        name: "rahul",
+        qualification: "b tech",
+        age: 25,
+        occupation: "student",
+      };
+      // console.log(person);
+      // document.write(person.name + "<br>");
+      // // name , qualification , occupation , age , relationships
+      // // OBJECT CARRIESS attributes(property/variables) assigned
+      // console.log(person);
+      // document.write(person);
+      // // way 2 to access value inside the object:
+      // document.write(person["name"]);
+      // document.write(person["age"]);
+      // document.write(person["qualification"]);
+
+      // for in loop will help us iterate through an object
+
+      for (let p in person) {
+        console.log(p);
+        console.log(typeof p);
+        document.write(person[p] + "<br>");
+      }
+      // name age qualification
+      // datatype of variabvle p is string
+    </script>
+  </body>
+</html>

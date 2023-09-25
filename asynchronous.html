@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function orderpizza(pd) {
+        let flavour = "Margaretta";
+        console.log("pizza delivery" + flavour);
+        setTimeout(() => {
+          pd();
+        }, 5000);
+      }
+      // pizzadelivery();//pd - pizza delivery
+
+      function pizzadelivery() {
+        let address = "wilson garden";
+        console.log("out for delivery takes 30 mins to deliver");
+        console.log(" deliverd at" + address);
+      }
+      function callfriend() {
+        console.log("friend is called");
+        console.log("takes 30 mins to come");
+      }
+
+      orderpizza(pizzadelivery);
+      callfriend();
+    //   asynchronous - twoo functions runs parallely
+    </script>
+  </body>
+</html>
